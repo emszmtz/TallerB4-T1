@@ -1,0 +1,28 @@
+# Datos (no se versiona el CSV de Kaggle, ~158 MB)
+*.csv
+data/
+application_train.csv
+
+# Salidas generadas por el notebook
+outputs/
+*.png
+*.h5
+*.keras
+
+# Keras Tuner
+keras_tuner_dir/
+untitled_project/
+
+# Secretos / credenciales (Kaggle)
+.env
+kaggle.json
+!.env.example
+
+# Jupyter / Python
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+.venv/
+venv/
+TallerB4T1fairness_venv/
+.DS_Store

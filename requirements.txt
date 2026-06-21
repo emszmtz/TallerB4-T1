@@ -1,0 +1,10 @@
+# Taller B4-T1 — Diseño de Redes Confiables (Justicia e Incertidumbre)
+# Probado en Google Colab (Python 3.11) y en local con un entorno con TensorFlow.
+# NOTA: TensorFlow no soporta Python 3.14 todavía; usa Colab o un venv con Python 3.11/3.12.
+tensorflow>=2.16          # incluye Keras 3
+keras-tuner>=1.4
+tensorboard>=2.16         # lo usa Keras Tuner para el logging de los trials
+numpy>=1.26
+pandas>=2.0
+scikit-learn>=1.3
+matplotlib>=3.7
