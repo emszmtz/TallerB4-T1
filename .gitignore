@@ -28,3 +28,4 @@ venv/
 TallerB4T1fairness_venv/
 .DS_Store
 .claude/
+refactor_cleanup.py

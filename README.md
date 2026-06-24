@@ -3,7 +3,7 @@
 Notebook entregable del equipo para clasificar el riesgo de impago en **Home Credit Default
 Risk** de forma **justa** (sin discriminar por género) y **consciente de la incertidumbre**.
 
-El notebook principal es `merge_80_10_10.ipynb`. Todas las secciones usan la **misma fuente**
+El notebook principal es `taller_completo.ipynb`. Todas las secciones usan la **misma fuente**
 (`data/application_train.csv`, dataset completo) y el mismo **split estratificado 80/10/10**.
 Contiene:
 
@@ -28,7 +28,7 @@ TallerB4-T1/
 ├── README.md
 ├── requirements.txt
 ├── .gitignore
-├── merge_80_10_10.ipynb                 # Notebook principal
+├── taller_completo.ipynb                 # Notebook principal
 ├── Taller_B4_T1_Solucion_completo.ipynb # Copia local ignorada: versión completa anterior
 ├── data/                                # CSVs de Kaggle, no versionados
 ├── outputs/eda/                         # Figuras generadas por el EDA, no versionadas
@@ -105,7 +105,7 @@ Recomendado: Google Colab o Python 3.11/3.12 con TensorFlow/Keras 3.
 python3.12 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-jupyter lab merge_80_10_10.ipynb
+jupyter lab taller_completo.ipynb
 ```
 
 La copia `Taller_B4_T1_Solucion_completo.ipynb` se conserva solo en local y está incluida en
