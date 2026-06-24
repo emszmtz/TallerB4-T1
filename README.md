@@ -12,7 +12,6 @@ Contiene:
    aprende un score de endeudamiento con pesos positivos.
 3. **Tarea 2 — Aprendizaje Justo (Fair Loss)**: penaliza la dependencia entre la predicción y
    el género.
-3. **Tarea 3 — AutoML con Keras Tuner**: busca la mejor topología y genera la curva de Pareto Accuracy–Dependencia FAIR.
 4. **Tarea 4 — Incertidumbre**: estima el error de predicción con un *error-predictor*.
 
 La variable objetivo es `TARGET`:
@@ -29,7 +28,7 @@ TallerB4-T1/
 ├── README.md
 ├── requirements.txt
 ├── .gitignore
-├── merge_80_10_10.ipynb                 # Entregable: EDA + Tarea 1 + Fair Loss + Incertidumbre
+├── merge_80_10_10.ipynb                 # Notebook principal
 ├── Taller_B4_T1_Solucion_completo.ipynb # Copia local ignorada: versión completa anterior
 ├── data/                                # CSVs de Kaggle, no versionados
 ├── outputs/eda/                         # Figuras generadas por el EDA, no versionadas
@@ -76,14 +75,6 @@ El EDA guarda figuras en `outputs/eda/`:
 - ranking final de dependencias.
 
 
-## Keras Tuner
-
-La sección de AutoML utiliza Hyperband para optimizar capas, neuronas, activación,
-dropout, batch normalization, regularización L2 y learning rate. Después mantiene
-la topología ganadora y entrena distintos valores de `lambda` para estudiar el
-trade-off entre precisión y dependencia FAIR.
-
-Los resultados se guardan en `outputs/keras_tuner/`.
 
 ## Capa customizada
 
