@@ -12,6 +12,7 @@ outputs/
 # Copias locales / no entregar
 Taller_B4_T1_Solucion_completo.ipynb
 build_eda.py
+build_merge.py
 
 # Secretos / credenciales (Kaggle)
 .env
