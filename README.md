@@ -1,13 +1,18 @@
-# Taller B4-T1 — EDA ampliado + Capa Customizada
+# Taller B4-T1 — Diseño de Redes Confiables (Justicia e Incertidumbre)
 
-Notebook entregable para analizar dependencias en el dataset **Home Credit Default Risk** y
-desarrollar la **Tarea 1: arquitectura customizada**.
+Notebook entregable del equipo para clasificar el riesgo de impago en **Home Credit Default
+Risk** de forma **justa** (sin discriminar por género) y **consciente de la incertidumbre**.
 
-El notebook principal es `Taller_B4_T1_Solucion.ipynb`. Esta versión queda acotada a:
+El notebook principal es `merge_80_10_10.ipynb`. Todas las secciones usan la **misma fuente**
+(`data/application_train.csv`, dataset completo) y el mismo **split estratificado 80/10/10**.
+Contiene:
 
 1. **Exploración ampliada de datos (EDA)** sobre la base completa de Kaggle.
-2. **Capa customizada Keras**: `MonotonicDebtRiskLayer`, que calcula ratios financieros y
+2. **Tarea 1 — Capa customizada Keras** `MonotonicDebtRiskLayer`: calcula ratios financieros y
    aprende un score de endeudamiento con pesos positivos.
+3. **Tarea 2 — Aprendizaje Justo (Fair Loss)**: penaliza la dependencia entre la predicción y
+   el género.
+4. **Tarea 4 — Incertidumbre**: estima el error de predicción con un *error-predictor*.
 
 La variable objetivo es `TARGET`:
 
@@ -23,7 +28,7 @@ TallerB4-T1/
 ├── README.md
 ├── requirements.txt
 ├── .gitignore
-├── Taller_B4_T1_Solucion.ipynb          # Entregable: EDA ampliado + Tarea 1
+├── merge_80_10_10.ipynb                 # Entregable: EDA + Tarea 1 + Fair Loss + Incertidumbre
 ├── Taller_B4_T1_Solucion_completo.ipynb # Copia local ignorada: versión completa anterior
 ├── data/                                # CSVs de Kaggle, no versionados
 ├── outputs/eda/                         # Figuras generadas por el EDA, no versionadas
@@ -98,7 +103,7 @@ Recomendado: Google Colab o Python 3.11/3.12 con TensorFlow/Keras 3.
 python3.12 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-jupyter lab Taller_B4_T1_Solucion.ipynb
+jupyter lab merge_80_10_10.ipynb
 ```
 
 La copia `Taller_B4_T1_Solucion_completo.ipynb` se conserva solo en local y está incluida en
