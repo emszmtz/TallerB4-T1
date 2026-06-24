@@ -12,6 +12,7 @@ Contiene:
    aprende un score de endeudamiento con pesos positivos.
 3. **Tarea 2 — Aprendizaje Justo (Fair Loss)**: penaliza la dependencia entre la predicción y
    el género.
+3. **Tarea 3 — AutoML con Keras Tuner**: busca la mejor topología y genera la curva de Pareto Accuracy–Dependencia FAIR.
 4. **Tarea 4 — Incertidumbre**: estima el error de predicción con un *error-predictor*.
 
 La variable objetivo es `TARGET`:
@@ -73,6 +74,16 @@ El EDA guarda figuras en `outputs/eda/`:
 - ratios financieros usados por la capa custom;
 - señales de `bureau`, `previous_application`, `installments_payments` y `POS_CASH_balance`;
 - ranking final de dependencias.
+
+
+## Keras Tuner
+
+La sección de AutoML utiliza Hyperband para optimizar capas, neuronas, activación,
+dropout, batch normalization, regularización L2 y learning rate. Después mantiene
+la topología ganadora y entrena distintos valores de `lambda` para estudiar el
+trade-off entre precisión y dependencia FAIR.
+
+Los resultados se guardan en `outputs/keras_tuner/`.
 
 ## Capa customizada
 
