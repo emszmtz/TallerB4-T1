@@ -9,3 +9,5 @@ matplotlib>=3.7
 seaborn>=0.13
 scipy>=1.10
 kaggle>=2.2
+keras-tuner>=1.4.7
+tensorboard==2.20.0

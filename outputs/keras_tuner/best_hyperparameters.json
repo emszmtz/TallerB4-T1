@@ -1,0 +1,23 @@
+{
+  "n_hidden_layers": 4,
+  "activation": "elu",
+  "l2": 8.028474807082747e-05,
+  "units_0": 64,
+  "batch_norm_0": false,
+  "dropout_0": 0.0,
+  "learning_rate": 0.0018200079069213943,
+  "units_1": 96,
+  "batch_norm_1": true,
+  "dropout_1": 0.1,
+  "units_2": 16,
+  "batch_norm_2": false,
+  "dropout_2": 0.4,
+  "tuner/epochs": 8,
+  "tuner/initial_epoch": 3,
+  "tuner/bracket": 1,
+  "tuner/round": 1,
+  "units_3": 16,
+  "batch_norm_3": false,
+  "dropout_3": 0.0,
+  "tuner/trial_id": "0002"
+}
