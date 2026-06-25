@@ -31,7 +31,8 @@ TallerB4-T1/
 ├── taller_completo.ipynb                 # Notebook principal
 ├── Taller_B4_T1_Solucion_completo.ipynb # Copia local ignorada: versión completa anterior
 ├── data/                                # CSVs de Kaggle, no versionados
-├── outputs/eda/                         # Figuras generadas por el EDA, no versionadas
+├── outputs/eda/                         # Figuras generadas por el EDA
+├── outputs/keras_tuner/                 # Resultados ligeros de AutoML/Pareto
 └── report/
     ├── outline_presentacion.md
     └── reparto_tareas.md
@@ -60,7 +61,7 @@ kaggle datasets download -d megancrenshaw/home-credit-default-risk -p data/ --un
 
 ## Qué genera el notebook
 
-El EDA guarda figuras en `outputs/eda/`:
+El EDA guarda y versiona figuras en `outputs/eda/`:
 
 - panorama del dataset y desbalanceo de `TARGET`;
 - datos ausentes, especialmente `EXT_SOURCE_*`;

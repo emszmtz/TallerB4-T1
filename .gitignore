@@ -3,9 +3,15 @@
 data/
 application_train.csv
 
-# Salidas generadas por el notebook
-outputs/
-*.png
+# Salidas generadas por el notebook: se versionan sólo resultados ligeros.
+outputs/*
+!outputs/eda/
+!outputs/eda/*.png
+!outputs/keras_tuner/
+!outputs/keras_tuner/*.png
+!outputs/keras_tuner/*.csv
+!outputs/keras_tuner/*.json
+outputs/keras_tuner/home_credit_fair_hyperband/
 *.h5
 *.keras
 
